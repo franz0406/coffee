@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <!-- 폰트 어썸 CDN 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <!-- 헤더 Starts -->    
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="커피샵 로고 이미지"></a>
+        <!-- 네비게이터 -->
+        <nav class="navbar">            
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        <!-- 유틸메뉴 -->
+        <div class="util">
+            <i class="fas fa-search" id="search_btn"></i>
+            <i class="fas fa-shopping-cart" id="cart_btn"></i>
+            <i class="fas fa-bars" id="menu_btn"></i>
+        </div>
+        <!-- 검색 메뉴 -->
+        <form action="#" method="get" class="search_form">
+            <input type="search" id="search-box" name="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!-- 장바구니 박스 -->
+        <div class="cart_item_container">
+            <div class="cart_item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-1.png" alt="장바구니 제품">
+                <div class="cart_item_info">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-2.png" alt="장바구니 제품">
+                <div class="cart_item_info">
+                    <h3>cart item 02</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-3.png" alt="장바구니 제품">
+                <div class="cart_item_info">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-4.png" alt="장바구니 제품">
+                <div class="cart_item_info">
+                    <h3>cart item 04</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="check_out btn">checkout now</a>
+        </div>
+    </header>    
+    <!-- 헤더 Ends -->
+
+    <!-- 메인 Starts -->
+    <main>
+        <!-- Home section starts -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>fresh coffee in the morning</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta doloribus dolores vero qui! Soluta, quasi id voluptatum asperiores accusantium quaerat ullam iste eius reprehenderit hic sapiente nam. Perspiciatis, temporibus.</p>
+                <a href="#" class="btn">get yours now</a>
+            </div>
+        </section>
+        <!-- Home section ends -->
+
+        <!-- about section starts -->
+        <section class="about" id="about">
+            <h1 class="heading"><span>about</span> us </h1>
+            <div class="content">
+                <div class="img">
+                    <img src="images/about-img.jpeg" alt="about 페이지 상단 이미지">
+                </div>
+                <div class="info">
+                    <h3>what makes our coffee special?</h3>
+                    <p>Lorem ipsum dolor, sit ametm cum, iste corrupti voluptas veniam eaque ex iusto consectetur adipisicing elit. Quis illo nesciunt porro voluptate aspernatur vel sint maxime labore rem, magnam cum, iste corrupti voluptas veniam eaque ex iusto. Suscipit, quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque ipsum rerum. Amet minus repellat consectetur, minima quod explicabo voluptatum  esse deserunt voluptas beatae. Quas.</p>
+                    <a href="#" class="btn">learn more</a>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends -->
+
+        <!-- menu section starts -->
+        <section class="menu" id="menu">
+            <h1 class="heading">our <span>menu</span></h1>
+            <div class="box_container">
+                <div class="box">
+                    <img src="images/menu-1.png" alt="제품 이미지 첫번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-2.png" alt="제품 이미지 두번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-3.png" alt="제품 이미지 세번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-4.png" alt="제품 이미지 네번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-5.png" alt="제품 이미지 다섯번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-6.png" alt="제품 이미지 여섯번째">
+                    <h3>tasty and healthy</h3>
+                    <div class="price">$15.99 <span>20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </section>
+        <!-- menu section ends -->
+
+        <!-- products section starts -->
+        <section class="products" id="products">
+            <h1 class="heading"> our <span>products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/product-1.png" alt="1번째 상품">
+                    </div>
+                    <div class="content">
+                        <h3>fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/product-2.png" alt="1번째 상품">
+                    </div>
+                    <div class="content">
+                        <h3>fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/product-3.png" alt="1번째 상품">
+                    </div>
+                    <div class="content">
+                        <h3>fresh coffee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                    </div>
+                </div>
+            </div>             
+        </section>
+        <!-- products section ends -->
+
+        <!-- review section starts -->
+        <sectioon class="review" id="review">
+            <h1 class="heading"> customer's <span>review</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/quote-img.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adi pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae? pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae?</p>
+                    <img src="images/pic-1.png" alt="사용자 이미지 첫번째" class="user">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/quote-img.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adi pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae? pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae?</p>
+                    <img src="images/pic-2.png" alt="사용자 이미지 첫번째" class="user">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/quote-img.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adi pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae? pisicing elit. Rem nesciunt accusantium numquam vel dolore cupiditate quae omnis ipsam? Esse, repudiandae?</p>
+                    <img src="images/pic-3.png" alt="사용자 이미지 첫번째" class="user">
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </sectioon>
+        <!-- review section ends -->
+
+        <!-- contact section starts -->
+        <section class="contact" id="contact">
+            <h1 class="heading"> <span>contact</span> us</h1>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.785961514519!2d127.15164565627094!3d37.414659121613994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca85c43ae25b1%3A0xec8af6800ff96bfd!2z7ISx64Ko7IucIOuPhOy0jOuPmSAyMDYg7ISs66eI7J2E7Zy066i87Iuc7JWEMuuLqOyngOyVhO2MjO2KuA!5e0!3m2!1sko!2skr!4v1637772336442!5m2!1sko!2skr" allowfullscreen="" loading="lazy"></iframe>
+                <form action="#">
+                    <h3>get in touch</h3>
+                    <p class="input_box">
+                        <span class="fas fa-user"></span>
+                        <input type="text" name="txt" placeholder="name">
+                    </p>
+                    <p class="input_box">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" name="email" placeholder="email">
+                    </p>
+                    <p class="input_box">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" name="num" placeholder="number">
+                    </p>
+                    <input type="submit" value="contact now" class="btn">
+                </form>
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+        <!-- blog section starts -->
+        <section class="blogs" id="blogs">
+            <h1 class="heading"> our <span>blogs</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-1.jpeg" alt="블로그 이미지 첫번째">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Numquam unde aliquam sequi debitis soluta distinctio quia illo id velit molestias modi rerum dignissimos, magnam quis vero animi enim labore deserunt.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-2.jpeg" alt="블로그 이미지 두번째">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Numquam unde aliquam sequi debitis soluta distinctio quia illo id velit molestias modi rerum dignissimos, magnam quis vero animi enim labore deserunt.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-3.jpeg" alt="블로그 이미지 세번째">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">tasty and refreshing coffee</a>
+                        <span>by admin / 21st may, 2021</span>
+                        <p>Numquam unde aliquam sequi debitis soluta distinctio quia illo id velit molestias modi rerum dignissimos, magnam quis vero animi enim labore deserunt.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog section ends -->
+    </main>
+    <!-- 메인 Ends -->
+
+    <!-- 푸터 Starts -->
+    <footer class="footer">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            <a href="#">blogs</a>
+        </div>
+        <div class="credit">이 사이트는 포트폴리오 목적으로 만들어진 사이트입니다.</div>
+    </footer>
+    <!-- 푸터 Ends -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+.footer > .share{
+    padding:1rem 0;
+}
+.footer > .share > a{ /* 푸터 아이콘 */
+    width:5rem;
+    line-height:5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+.footer > .share > a:hover{ /* 푸터 아이콘 호버이벤트 */
+    background-color:var(--main-color);
+}
+.footer > .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;    
+}
+.footer > .links > a{
+    padding:0.7rem 2rem;
+    border:var(--border);
+    font-size: 2rem;
+    color:#fff;
+    letter-spacing: 0.1rem;
+}
+.footer > .links > a:hover{
+    background-color:var(--main-color);
+}
+.footer > .credit{
+    padding:3rem;
+    font-size: 2rem;
+    line-height: 1.6;    
+    color:#ccc;
+}

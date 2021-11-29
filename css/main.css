@@ -1,0 +1,317 @@
+main{
+    padding:2rem 7%;
+}
+
+/* 홈 색션 시작 */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home-img.jpeg)no-repeat;
+    background-size: cover;
+    background-position:center;    
+}
+.home > .content{ /* 홈 컨탠츠내용 너비 */
+    max-width: 60rem;
+}
+.home > .content > h3{ /* 홈 컨탠츠 제목 */
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+.home > .content > p{ /* 홈 컨탠츠 내용 */
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    padding:1rem 0;
+    color:#eee;
+}
+
+
+@media screen and (max-width:768px){
+    
+    .home{
+        background-position: left;
+        justify-content: center;
+    }
+    
+    .home > .content > h3{
+        font-size: 4.5rem;
+    }
+
+    .home > .content > p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:991px){
+    main{
+        padding:2rem;
+    }
+}
+/* 홈 색션 끝 */
+
+
+/* 어바웃 섹션 시작 */
+.about > .content{
+    display: flex;
+    align-items: center;
+    background: var(--black);    
+}
+.about > .content > .img{ /* 이미지 */
+    flex:1 1 45rem;
+}
+.about > .content > .img > img{
+    width: 100%;
+}
+.about > .content > .info{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+.about > .content > .info > h3{ /* 내용 제목 */
+    font-size: 3rem;
+    color:#fff;
+}
+.about > .content > .info > p{ /* 내용 */
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width:991px){
+
+    .about > .content{
+        flex-wrap: wrap;
+    }
+    .about > .content > .img{ /* 이미지 */
+        flex:1 1 100%;
+    }
+    .about > .content > .info{
+        flex:1 1 100%;        
+    }
+}
+/* 어바웃 섹션 끝 */
+
+
+/* 메뉴 섹션 시작 */
+.menu > .box_container{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.menu > .box_container > .box{ /* 제품 컨테이너 */
+    padding:5rem;
+    text-align: center;
+    border:var(--border);
+}
+.menu > .box_container > .box > img{ /* 제품 이미지 */
+    height: 10rem;
+}
+.menu > .box_container > .box > h3{ /* 제품 이름 */
+    color:#fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+.menu > .box_container > .box > .price{ /* 제품 가격 */
+    color:#fff;
+    font-size: 2.5rem;
+    padding:5rem 0;
+}
+.menu > .box_container > .box > .price > span{
+    color:#fff;
+    font-size: 1.5rem;    
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.menu > .box_container > .box:hover{ /* 제품 컨테이너 호버 이벤트 */
+    background: #fff;
+}
+.menu > .box_container > .box:hover > *{ /* 제품 컨테이너 호버 이벤트 */
+    color: var(--black);
+}
+.menu > .box_container > .box:hover span{ /* 제품 컨테이너 호버 이벤트 */
+    color: var(--black);
+}
+/* 메뉴 섹션 끝 */
+
+
+/* 프로덕트 섹션 시작 */
+.products > .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.products > .box-container > .box{
+    text-align: center;
+    border:var(--border);
+    padding: 2rem;
+}
+.products > .box-container > .box > .icons > a{ /* 제품 아이콘 */
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color:#fff;
+    margin: 0.3rem;
+}
+.products > .box-container > .box > .icons > a:hover{ /* 제품 아이콘 호버 이벤트*/
+    background:var(--main-color);
+}
+.products > .box-container > .box > .image{ /* 제품 이미지 */
+    padding: 2.5rem 0;
+}
+.products > .box-container > .box > .image > img{
+    height:25rem;
+}
+.products > .box-container > .box > .content > h3{ /* 제품 이름 */
+    color:#fff;
+    font-size: 2.5rem;
+}
+.products > .box-container > .box > .content > .stars{
+    padding: 1.5rem;
+}
+.products > .box-container > .box > .content > .stars > i{ /* 제품 평점 아이콘 */
+    font-size: 1.7rem;
+    color:var(--main-color);
+}
+.products > .box-container > .box > .content > .price{ /* 제품 가격 */
+    color:#fff;
+    font-size:2.5rem;
+}
+.products > .box-container > .box > .content > .price > span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size:1.5rem;
+}
+/* 프로덕트 섹션 끝 */
+
+
+/* 리뷰 섹션 시작 */
+.review > .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.review > .box-container > .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+}
+.review > .box-container > .box > p{ /* 리뷰 내용 */
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color:#ccc;
+    padding:2rem 0rem;
+}
+.review > .box-container > .box > .user{ /* 리뷰 사용자 이미지 */
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review > .box-container > .box > h3{/* 리뷰 사용자 이름 */
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#fff;
+}
+.review > .box-container > .box > .stars > i{ /* 리뷰 평점 */
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#fff;
+}
+/* 리뷰 섹션 끝 */
+
+
+/* 콘택트 섹션 시작 */
+.contact > .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.contact > .row > .map{ /* 지도 */
+    flex:1 1 45rem;
+    width:100%;
+    object-fit: cover;
+}
+.contact > .row > form{ /* 폼 영역 */
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+.contact > .row > form > h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+.contact > .row > form > .input_box{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    background: var(--bg);
+    border:var(--border);
+}
+.contact > .row > form > .input_box > span{ /* 아이콘 */
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.contact > .row > form > .input_box > input{ /* 인풋 요소 */
+    width:100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background: none;
+}
+/* 콘택트 섹션 끝 */
+
+
+/* 블로그 섹션 시작 */
+.blogs > .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.blogs > .box-container > .box{
+    border:var(--border);
+}
+.blogs > .box-container > .box > .image{ /* 블로그 이미지 */
+    height:25rem;
+    overflow:hidden;
+    width:100%;
+}
+.blogs > .box-container > .box > .image > img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.blogs > .box-container > .box:hover > .image > img{ /* 블로그 이미지 호버 이벤트 */
+    transform: scale(1.2);
+}
+.blogs > .box-container > .box > .content{
+    padding:2rem;
+}
+.blogs > .box-container > .box > .content > .title{ /* 블로그 제목 */
+    font-size:2.5rem;
+    line-height: 1.6;
+    color:#fff;
+}
+.blogs > .box-container > .box > .content > .title:hover{ /* 블로그 제목 호버 이벤트*/
+    color:var(--main-color);
+}
+.blogs > .box-container > .box > .content > span{ /* 블로그 날짜 */
+    color:var(--main-color);
+    display:block;
+    padding-top:1rem;
+    font-size:2rem;
+}
+.blogs > .box-container > .box > .content > p{ /* 블로그 내용 */
+    font-size:1.6rem;
+    line-height: 1.6;
+    color:#ccc;
+    padding:1rem 0;
+}
+/* 블로그 섹션 끝 */
